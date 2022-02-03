@@ -11,11 +11,11 @@ import study.springcorebasic.order.OrderServiceImpl;
 
 public class AppConfig {
 
-    private MemberRepository memberRepository() {
+    public MemberRepository memberRepository() {
         return new MemoryMemberRepository();
     }
 
-    private DiscountPolicy discountPolicy() {
+    public DiscountPolicy discountPolicy() {
         return new RateDiscountPolicy();
     }
 
